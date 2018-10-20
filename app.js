@@ -1,5 +1,5 @@
 const appInsights = require("applicationinsights");
-//appInsights.setup("<<change-me>>");
+appInsights.setup(process.env.AI_KEY || "");
 appInsights.start();
 
 var express = require('express');
